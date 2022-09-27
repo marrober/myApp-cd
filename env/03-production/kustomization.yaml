@@ -53,7 +53,7 @@ patchesJson6902:
     name: argocd-admin
 images:
 - name: quay.io/marrober/myapp
-  newTag: f5d1-wjpvs
+  newTag: f5d1-d7cgc
 resources:
 - ../base/main
 - ../base/01-rolebindings
