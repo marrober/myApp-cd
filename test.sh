@@ -7,7 +7,7 @@ echo ""
 echo ""
 echo "Test the QA environment"
 echo ""
-curl -k http://myapp-route-myapp-development.apps.skylake.demolab.local/System/propertiesJavaHome
+curl -k http://myapp-route-myapp-qa.apps.skylake.demolab.local/System/propertiesJavaHome
 
 echo ""
 echo ""
