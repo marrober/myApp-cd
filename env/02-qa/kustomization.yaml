@@ -11,6 +11,13 @@ patchesJson6902:
     name: myapp
 - patch: |-
     - op: replace
+      path: /metadata/name
+      value: myapp-qa
+  target:
+    kind: Deployment
+    name: myapp
+- patch: |-
+    - op: replace
       path: /metadata/namespace
       value: myapp-qa
   target:
