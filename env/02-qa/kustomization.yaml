@@ -51,6 +51,13 @@ patchesJson6902:
   target:
     kind: RoleBinding
     name: myapp-development
+- patch: |-
+    - op: replace
+      path: /metadata/name
+      value: myapp-qa
+  target:
+    kind: Deployment
+    name: myapp
 resources:
 - ../base/main
 - ../base/01-rolebindings
