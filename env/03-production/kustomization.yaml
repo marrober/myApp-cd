@@ -11,13 +11,6 @@ patchesJson6902:
     name: myapp
 - patch: |-
     - op: replace
-      path: /metadata/name
-      value: myapp-production
-  target:
-    kind: Deployment
-    name: myapp
-- patch: |-
-    - op: replace
       path: /spec/template/spec/containers/0/image
       value: quay.io/marrober/myapp
   target:
@@ -58,6 +51,13 @@ patchesJson6902:
   target:
     kind: RoleBinding
     name: argocd-admin
+- patch: |-
+    - op: replace
+      path: /metadata/name
+      value: myapp-production
+  target:
+    kind: Deployment
+    name: myapp
 images:
 - name: quay.io/marrober/myapp
   newTag: 86a5-qxdl8
