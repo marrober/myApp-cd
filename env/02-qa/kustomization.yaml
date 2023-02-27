@@ -58,10 +58,17 @@ patchesJson6902:
   target:
     kind: RoleBinding
     name: myapp-development
+- patch: |-
+    - op: replace
+      path: /metadata/name
+      value: myapp-qa
+  target:
+    kind: Deployment
+    name: myapp
 resources:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 86a5-qxdl8
+  newTag: c8cb-9ckb5
