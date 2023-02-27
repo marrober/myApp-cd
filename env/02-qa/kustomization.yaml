@@ -64,4 +64,4 @@ resources:
 - ../base/02-rolebindings
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 86a5-qxdl8
+  newTag: c8cb-9ckb5
