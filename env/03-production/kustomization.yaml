@@ -60,7 +60,7 @@ patchesJson6902:
     name: myapp
 images:
 - name: quay.io/marrober/myapp
-  newTag: 39db-rwv7z
+  newTag: 1d69-d7mll
 resources:
 - ../base/main
 - ../base/01-rolebindings
