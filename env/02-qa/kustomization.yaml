@@ -65,7 +65,7 @@ patchesJson6902:
   target:
     kind: Deployment
     name: myapp
-resources:
+bases:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
