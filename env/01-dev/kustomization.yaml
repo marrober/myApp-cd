@@ -10,10 +10,10 @@ patchesJson6902:
     kind: Deployment
     name: myapp
 
-bases:
+images:
+- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
+  newTag: 316f-jdpkk
+resources:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
-images:
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 1d69-d7mll
