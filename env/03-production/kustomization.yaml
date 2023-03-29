@@ -56,7 +56,7 @@ patches:
     name: myapp
 images:
 - name: quay.io/marrober/myapp
-  newTag: 1d69-d7mll
+  newTag: 316f-jdpkk
 resources:
 - ../base/main
 - ../base/01-rolebindings
