@@ -71,4 +71,4 @@ bases:
 - ../base/02-rolebindings
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 1d69-d7mll
+  newTag: 316f-jdpkk
