@@ -13,7 +13,7 @@ patches:
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
   newTag: 11cf-xckqr
-resources:
+bases:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
