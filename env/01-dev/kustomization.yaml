@@ -12,7 +12,7 @@ patchesJson6902:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 316f-jdpkk
+  newTag: 11cf-xckqr
 resources:
 - ../base/main
 - ../base/01-rolebindings
