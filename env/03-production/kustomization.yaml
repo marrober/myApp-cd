@@ -14,6 +14,9 @@ patches:
     kind: Deployment
 - patch: |-
     - op: replace
+      path: /metadata/name
+      value: myapp-production
+    - op: replace
       path: /spec/replicas
       value: 4
   target:
@@ -47,13 +50,6 @@ patches:
   target:
     kind: RoleBinding
     name: argocd-admin
-- patch: |-
-    - op: replace
-      path: /metadata/name
-      value: myapp-production
-  target:
-    kind: Deployment
-    name: myapp
 images:
 - name: quay.io/marrober/myapp
   newTag: 11cf-xckqr
