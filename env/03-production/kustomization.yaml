@@ -3,7 +3,7 @@ kind: Kustomization
 
 patches:
 - patch: |-
-    - op: replaces
+    - op: replace
       path: /metadata/namespace
       value: myapp-production
   target:
