@@ -10,19 +10,16 @@ patches:
     kind: Deployment
     name: myapp
 - patch: |-
-    - op: replace
+    - op: replaces
       path: /metadata/name
       value: myapp-prod
+    - op: replace
+      path: /spec/replicas
+      value: 4
   target:
     kind: Deployment
     name: myapp
 - path: patch.yaml
-  target:
-    kind: Deployment
-- patch: |-
-    - op: replace
-      path: /spec/replicas
-      value: 4
   target:
     kind: Deployment
     name: myapp
