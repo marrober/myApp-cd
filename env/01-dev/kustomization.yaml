@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 9004-s9f7x
+  newTag: dcff-qvtbj
 resources:
 - ../base/main
 - ../base/01-rolebindings
