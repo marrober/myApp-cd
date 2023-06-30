@@ -52,7 +52,7 @@ patches:
     name: argocd-admin
 images:
 - name: quay.io/marrober/myapp
-  newTag: 4f41-7b5c8
+  newTag: 5b62-ctcfz
 resources:
 - ../base/main
 - ../base/01-rolebindings
