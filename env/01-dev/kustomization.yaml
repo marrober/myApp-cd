@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: bf5f-pfbp5
+  newTag: bf5f-sv7z8
 resources:
 - ../base/main
 - ../base/01-rolebindings
