@@ -70,5 +70,6 @@ bases:
 - ../base/01-rolebindings
 - ../base/02-rolebindings
 images:
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: bf5f-lm98j
+- name: default-route-openshift-image-registry.apps.conroe.demolab.local/myapp-ci/myapp-runtime
+  newTag: ac43-qsphm
+
