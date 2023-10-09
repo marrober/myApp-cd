@@ -65,11 +65,12 @@ patches:
   target:
     kind: Deployment
     name: myapp
-bases:
-- ../base/main
-- ../base/01-rolebindings
-- ../base/02-rolebindings
 images:
 - name: default-route-openshift-image-registry.apps.conroe.demolab.local/myapp-ci/myapp-runtime
   newTag: ac43-qsphm
-
+- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
+  newTag: ed99-5mgxh
+resources:
+- ../base/main
+- ../base/01-rolebindings
+- ../base/02-rolebindings
