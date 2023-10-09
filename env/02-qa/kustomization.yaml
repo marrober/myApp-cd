@@ -1,10 +1,17 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-patchesJson6902:
+patches:
 - patch: |-
     - op: replace
       path: /metadata/namespace
+      value: myapp-qa
+  target:
+    kind: Deployment
+    name: myapp
+- patch: |-
+    - op: replace
+      path: /metadata/name
       value: myapp-qa
   target:
     kind: Deployment
@@ -58,12 +65,11 @@ patchesJson6902:
   target:
     kind: Deployment
     name: myapp
-resources:
+bases:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
 images:
 - name: default-route-openshift-image-registry.apps.conroe.demolab.local/myapp-ci/myapp-runtime
   newTag: ac43-qsphm
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: bf5f-lm98j
+

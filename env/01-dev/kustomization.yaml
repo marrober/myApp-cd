@@ -1,10 +1,19 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
+patches:
+- patch: |-
+    - op: replace
+      path: /metadata/name
+      value: myapp-development
+  target:
+    kind: Deployment
+    name: myapp
+
+images:
+- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
+  newTag: bf5f-lm98j
 resources:
 - ../base/main
 - ../base/01-rolebindings
 - ../base/02-rolebindings
-images:
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 6322-h2vk2

@@ -1,53 +1,53 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-patchesJson6902:
+patches:
 - patch: |-
     - op: replace
       path: /metadata/namespace
-      value: myapp-pre-prod
+      value: myapp-prod
   target:
     kind: Deployment
     name: myapp
 - patch: |-
-    - op: replace
-      path: /spec/template/spec/containers/0/image
-      value: quay.io/marrober/myapp
-  target:
-    kind: Deployment
-    name: myapp
-- patch: |-
+    - op: replaces
+      path: /metadata/name
+      value: myapp-prod
     - op: replace
       path: /spec/replicas
       value: 4
   target:
     kind: Deployment
     name: myapp
+- path: patch.yaml
+  target:
+    kind: Deployment
+    name: myapp
 - patch: |-
     - op: replace
       path: /metadata/namespace
-      value: myapp-pre-prod
+      value: myapp-prod
   target:
     kind: Service
     name: myapp
 - patch: |-
     - op: replace
       path: /metadata/namespace
-      value: myapp-pre-prod
+      value: myapp-prod
   target:
     kind: Route
     name: myapp-route
 - patch: |-
     - op: replace
       path: /metadata/name
-      value: myapp-pre-prod
+      value: myapp-prod
   target:
     kind: Namespace
     name: myapp-development
 - patch: |-
     - op: replace
       path: /metadata/namespace
-      value: myapp-pre-prod
+      value: myapp-prod
   target:
     kind: RoleBinding
     name: argocd-admin

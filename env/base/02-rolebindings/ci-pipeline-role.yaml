@@ -4,9 +4,9 @@ metadata:
   name: myapp-development
   namespace: myapp-ci
 subjects:
-  - kind: ServiceAccount
-    name: default
-    namespace: myapp-development
+- kind: ServiceAccount
+  name: default
+  namespace: myapp-development
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
