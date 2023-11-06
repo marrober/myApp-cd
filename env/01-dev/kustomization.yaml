@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: cd42-kggln
+  newTag: 1c15-zkt8v
 resources:
 - ../base/main
 - ../base/01-rolebindings
