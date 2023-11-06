@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 1c15-zkt8v
+  newTag: 9c15-pqmbb
 resources:
 - ../base/main
 - ../base/01-rolebindings
