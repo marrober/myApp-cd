@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 711d-larnz
+  newTag: 711d-4zg77
 resources:
 - ../base/main
 - ../base/01-rolebindings
