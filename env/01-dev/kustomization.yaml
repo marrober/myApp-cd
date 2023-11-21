@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 2369-bltnr
+  newTag: 17be-sr2cg
 resources:
 - ../base/main
 - ../base/01-rolebindings
