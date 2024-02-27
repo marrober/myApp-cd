@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: db43-tx724
+  newTag: e192-4hkqb
 resources:
 - ../base/main
 - ../base/01-rolebindings
