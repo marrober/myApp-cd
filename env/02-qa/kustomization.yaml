@@ -69,7 +69,7 @@ images:
 - name: default-route-openshift-image-registry.apps.conroe.demolab.local/myapp-ci/myapp-runtime
   newTag: ac43-qsphm
 - name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 7975-n6rvx
+  newTag: db43-tx724
 resources:
 - ../base/main
 - ../base/01-rolebindings
