@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime  
+        image: default-route-openshift-image-registry.apps.cluster-84m6f-1.sandbox851.opentlc.com/myapp-ci/myapp-runtime  
         imagePullPolicy: Always
         ports:
         - containerPort: 9080
