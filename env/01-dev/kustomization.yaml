@@ -11,7 +11,7 @@ patches:
     name: myapp
 
 images:
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
+- name: default-route-openshift-image-registry.apps.cluster-84m6f-1.sandbox851.opentlc.com
   newTag: 8cff-jv4h7
 resources:
 - ../base/main
