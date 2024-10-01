@@ -11,8 +11,8 @@ patches:
     name: myapp
 
 images:
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: bf5f-lm98j
+- name: default-route-openshift-image-registry.apps.cluster-8sf4w-1.8sf4w-1.sandbox2785.opentlc.com/myapp-ci/myapp-runtime
+  newTag: 8cff-8wtmf
 resources:
 - ../base/main
 - ../base/01-rolebindings
