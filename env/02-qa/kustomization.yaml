@@ -68,10 +68,6 @@ patches:
 images:
 - name: default-route-openshift-image-registry.apps.cluster-8sf4w-1.8sf4w-1.sandbox2785.opentlc.com/myapp-ci/myapp-runtime
   newTag: 8cff-8wtmf
-- name: default-route-openshift-image-registry.apps.conroe.demolab.local/myapp-ci/myapp-runtime
-  newTag: ac43-qsphm
-- name: image-registry.openshift-image-registry.svc:5000/myapp-ci/myapp-runtime
-  newTag: 8cff-jv4h7
 resources:
 - ../base/main
 - ../base/01-rolebindings
