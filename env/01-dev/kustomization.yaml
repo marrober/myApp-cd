@@ -14,7 +14,7 @@ images:
 - name: default-route-openshift-image-registry.apps.cluster-8sf4w-1.8sf4w-1.sandbox2785.opentlc.com/myapp-ci/myapp-runtime
   newTag: 8cff-b6zdx
 - name: default-route-openshift-image-registry.apps.cluster-ktrst.ktrst.sandbox1131.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 8cff-z5q49
+  newTag: 8cff-clmpc
 resources:
 - ../base/main
 - ../base/01-rolebindings
