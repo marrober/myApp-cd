@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: default-route-openshift-image-registry.apps.cluster-ktrst.ktrst.sandbox1131.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 8cff-nr82w
+  newTag: 8cff-v629y
 resources:
 - ../base/main
 - ../base/01-rolebindings
