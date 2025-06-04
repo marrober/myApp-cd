@@ -66,7 +66,7 @@ patches:
     kind: Deployment
     name: myapp
 images:
-- name: default-route-openshift-image-registry.apps.cluster-ktrst.ktrst.sandbox1131.opentlc.com/myapp-ci/myapp-runtime
+- name: default-route-openshift-image-registry.apps.cluster-xjcj4.xjcj4.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
   newTag: 8cff-cvfi3
 resources:
 - ../base/main
