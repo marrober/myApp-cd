@@ -67,8 +67,6 @@ patches:
     name: myapp
 images:
 - name: default-route-openshift-image-registry.apps.cluster-xjcj4.xjcj4.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 8cff-cvfi3
-- name: default-route-openshift-image-registry.apps.cluster-xjcj4.xjcj4.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
   newTag: 8cff-oartu
 resources:
 - ../base/main
