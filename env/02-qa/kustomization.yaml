@@ -67,7 +67,7 @@ patches:
     name: myapp
 images:
 - name: default-route-openshift-image-registry.apps.cluster-xjcj4.xjcj4.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 8cff-v831y
+  newTag: 8cff-g4jes
 resources:
 - ../base/main
 - ../base/01-rolebindings
