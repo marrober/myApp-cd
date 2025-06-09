@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: default-route-openshift-image-registry.apps.cluster-gffzv.gffzv.sandbox2394.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 8cff-96k4m
+  newTag: 8cff-f96zp
 - name: default-route-openshift-image-registry.apps.cluster-xjcj4.xjcj4.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
   newTag: 8cff-wk1np
 resources:
