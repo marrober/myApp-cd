@@ -9,3 +9,5 @@ spec:
   to:
     kind: Service
     name: myapp
+  tls:
+    termination: edge
