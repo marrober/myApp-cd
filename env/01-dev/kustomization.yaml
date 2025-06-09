@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: default-route-openshift-image-registry.apps.cluster-gffzv.gffzv.sandbox2394.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 6c77-rm6br
+  newTag: f770-dkxb4
 resources:
 - ../base/main
 - ../base/01-rolebindings
