@@ -67,7 +67,7 @@ patches:
     name: myapp
 images:
 - name: default-route-openshift-image-registry.apps.cluster-gffzv.gffzv.sandbox2394.opentlc.com/myapp-ci/myapp-runtime
-  newTag: f770-dkxb4
+  newTag: 483b-xdvsv
 resources:
 - ../base/main
 - ../base/01-rolebindings
