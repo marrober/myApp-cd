@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: default-route-openshift-image-registry.apps.cluster-lbz56.lbz56.sandbox159.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 2390-csbmx
+  newTag: c1c3-rczcw
 resources:
 - ../base/main
 - ../base/01-rolebindings
