@@ -69,7 +69,7 @@ images:
 - name: default-route-openshift-image-registry.apps.cluster-gffzv.gffzv.sandbox2394.opentlc.com/myapp-ci/myapp-runtime
   newTag: 483b-xdvsv
 - name: default-route-openshift-image-registry.apps.cluster-lbz56.lbz56.sandbox159.opentlc.com/myapp-ci/myapp-runtime
-  newTag: 483b-pf5bc
+  newTag: 483b-89ih3
 - name: default-route-openshift-image-registry.apps.cluster-xljdn.xljdn.sandbox223.opentlc.com/myapp-ci/myapp-runtime
   newTag: 483b-lc7s6
 resources:
