@@ -10,19 +10,19 @@ $productionRoute = `oc get route -n myapp-production myapp-route -o jsonpath='{.
 
 print $productionRoute."\n";
 
-$curlCommandDev = "curl -k -s http://".$developmentRoute."/System/propertiesJavaHome";
+$curlCommandDev = "curl -k -s https://".$developmentRoute."/System/propertiesJavaHome";
 
 $curlResponseDev = `$curlCommandDev`;
 
 print "Development : ".$curlResponseDev."\n";
 
-$curlCommandQA = "curl -k -s http://".$QARoute."/System/propertiesJavaHome";
+$curlCommandQA = "curl -k -s https://".$QARoute."/System/propertiesJavaHome";
 
 $curlResponseQA = `$curlCommandQA`;
 
 print "QA          : ".$curlResponseQA."\n";
 
-$curlCommandProduction = "curl -k -s http://".$productionRoute."/System/propertiesJavaHome";
+$curlCommandProduction = "curl -k -s https://".$productionRoute."/System/propertiesJavaHome";
 
 $curlResponseProduction = `$curlCommandProduction`;
 
