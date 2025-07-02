@@ -52,7 +52,7 @@ patches:
     name: argocd-admin
 images:
 - name: quay.io/marrober/myapp
-  newTag: 2390-csbmx
+  newTag: c1c3-rczcw
 resources:
 - ../base/main
 - ../base/01-rolebindings
