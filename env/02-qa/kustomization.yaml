@@ -68,6 +68,8 @@ patches:
 images:
 - name: default-route-openshift-image-registry.apps.cluster-lbz56.lbz56.sandbox159.opentlc.com/myapp-ci/myapp-runtime
   newTag: c1c3-rczcw
+- name: default-route-openshift-image-registry.apps.cluster-w9tn8.w9tn8.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
+  newTag: c1c3-c9ibj
 resources:
 - ../base/main
 - ../base/01-rolebindings
