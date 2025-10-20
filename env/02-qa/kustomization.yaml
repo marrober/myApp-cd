@@ -71,7 +71,7 @@ images:
 - name: default-route-openshift-image-registry.apps.cluster-w9tn8.w9tn8.sandbox1665.opentlc.com/myapp-ci/myapp-runtime
   newTag: c1c3-hdwgv
 - name: default-route-openshift-image-registry.apps.ocp4.mr-openshift.co.uk/myapp-ci/myapp-runtime
-  newTag: c1c3-awpdb
+  newTag: 2e90-vfpr6
 resources:
 - ../base/main
 - ../base/01-rolebindings
