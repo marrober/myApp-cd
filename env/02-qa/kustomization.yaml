@@ -67,7 +67,7 @@ patches:
     name: myapp
 images:
 - name: default-route-openshift-image-registry.apps.ocp4.mr-openshift.co.uk/myapp-ci/myapp-runtime
-  newTag: 2e90-jlg48
+  newTag: 0312-wwj2f
 resources:
 - ../base/main
 - ../base/01-rolebindings
