@@ -12,7 +12,7 @@ patches:
 
 images:
 - name: default-route-openshift-image-registry.apps.ocp4.mr-openshift.co.uk/myapp-ci/myapp-runtime
-  newTag: 0312-wwj2f
+  newTag: 07db-9r2fk
 resources:
 - ../base/main
 - ../base/01-rolebindings
